@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/memsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear"
+        android:layout_toEndOf="@+id/add"
+        android:text="M-"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <Button
+        android:id="@+id/memadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/clear"
+        android:text="M+"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <Button
+        android:id="@+id/memread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear"
+        android:layout_toEndOf="@+id/subtract"
+        android:text="MR"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <Button
+        android:id="@+id/memclr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear"
+        android:layout_toEndOf="@+id/multiply"
+        android:text="MC"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <TextView
+        android:id="@+id/Nothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Made by Appy.. :)"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="First number"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/num1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Second number"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="182dp"
+        android:text="+"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/add"
+        android:layout_toEndOf="@+id/add"
+        android:text="-"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/add"
+        android:layout_toEndOf="@+id/subtract"
+        android:text="*"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/add"
+        android:layout_toEndOf="@+id/multiply"
+        android:text="/"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <Button
+        android:id="@+id/sine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/num1"
+        android:layout_centerVertical="true"
+        android:text="sin"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <Button
+        android:id="@+id/cos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/num1"
+        android:text="cos"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <Button
+        android:id="@+id/tan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/cos"
+        android:text="tan"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sine"
+        android:layout_toEndOf="@+id/num1"
+        android:text="Clear"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_alignEnd="@+id/num2"
+        android:layout_below="@+id/num1"
+        android:text="Result"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+</RelativeLayout>
